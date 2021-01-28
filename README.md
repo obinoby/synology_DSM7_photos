@@ -1,7 +1,7 @@
 # synology_DSM7_photos
 
 Your Synology NAS must be upgraded to DSM 7 beta before use.
-The script only works wuth the new Synology Photos app.
+The script only works with the new Synology Photos app.
 
 ## Disclaimer
 This script happend to work for me on my Synology NAS. Use it at your own risks.
