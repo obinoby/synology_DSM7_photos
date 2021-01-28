@@ -6,6 +6,10 @@ new_owner_name=$2
 # backup DB
 echo "Backup the DB before touching it"
 sudo -u postgres pg_dump -d synofoto > bck_synofoto_$(date +"%Y%m%d-%H%M%S").psql
+if [ $? -ne 0 ]; then
+  echo "Backup failed - Aborting"
+  exit 1
+fi
 
 ## Connect to pgsql
 pg_connect="sudo -u postgres psql -d synofoto -t -c "
