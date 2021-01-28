@@ -16,4 +16,5 @@ This script loops over all albums own by a user to change the ownership to an ot
 1. Put the script on your Synology NAS
 2. Log in your Synology NAS through SSH
 3. Elevate to root with : sudo su
-4. Run the script : bash /path/to/the/script/syno_photos.sh old_username new_username
+4. Go to the script directory : cd /path/to/the/script
+5. Run the script : bash ./syno_photos.sh old_username new_username
