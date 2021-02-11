@@ -24,13 +24,13 @@ This script loops over all albums owned by a user to change the ownership to an 
 - It finds the user ID for each of the old and the new user
 - It finds every albums that belong to the old user
 - It loops on each of those albums to change the user-id on :
--- normal_album
--- many_item_has_many_normal_album
--- share
--- share_permission
--- album
+ - normal_album
+ - many_item_has_many_normal_album
+ - share
+ - share_permission
+ - album
 
 It changes the album table at the end because it is the table used to find the albums. By doing so I make sure to be able to re-run on the same set of albums if it fails.
 
-## Know bugs
+## Known bugs
 - On few albums we can not change the permissions anymore
